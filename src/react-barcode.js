@@ -37,7 +37,7 @@ class Barcode extends React.Component {
       new JsBarcode(
         renderElement,
         this.props.value,
-        Object.assign({text: this.props.text ?? this.props.value}, this.props)
+        Object.assign({}, this.props)
       );
     } catch (e) {
       // prevent stop the parent process
